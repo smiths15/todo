@@ -1,6 +1,9 @@
  <section class="todapp">
   <header class="header">
     <h1> todos </h1>
+    <form id="new-form">
+      <input type="text" class="new-todo" placeholder="Add task"/>
+    </form>
   </header>
 
   <section class="main">
@@ -13,6 +16,14 @@
 
 <script>
   $(function(){
+    $('#new-form').submit(function(event){
+      event.preventDefault();
+      var textbox = $('.new-todo');
+      console.log("Task: ", textbox.val());
+    });
+
+
+
     //taskHtml method takes in javascript representation 
     //of the task and produces an html representation us
     //<li> tags
@@ -21,7 +32,7 @@
       var liElement = '<li><div class="view"><input class="toggle" type="checkbox"' +
         "data-id='" + task.id + "'"+
         checkedStatus +
-        '><label>' + 
+        '/><label>' + 
         task.title + 
         '</label></div></li>';
 
