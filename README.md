@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To-Do MVC is a web app built in Javascript that allows users to create a todo list and cross off completed items.
 
-Things you may want to cover:
+This web app utilizes AJAX to make updates to a page without requiring a full page reload. This is done using RESTful JSON APIs from Rails and Javascript.
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
